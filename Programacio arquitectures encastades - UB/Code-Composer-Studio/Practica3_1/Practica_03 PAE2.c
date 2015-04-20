@@ -149,10 +149,10 @@ void config_P4_LEDS (void)
 
 void config_A1_timer(void)
 {
-	TA1CTL = TASSEL_1+MC_1; //TASSEL_1 - Mode ACLK, MC_1 Mode UP
-	TA1CCTL0=CCIE; //Habilitem interrupcions
+	TB1CTL = TBSSEL_1+MC_1; //TASSEL_1 - Mode ACLK, MC_1 Mode UP
+	TB1CCTL0=CCIE; //Habilitem interrupcions
 
-	TA1CCR0 = 33; //ACLK treballa a uns 32kHz, per tant fer-lo arribar a 33 equivaldria a aproximadament 1ms
+	TB1CCR0 = 33; //ACLK treballa a uns 32kHz, per tant fer-lo arribar a 33 equivaldria a aproximadament 1ms
 
 }
 

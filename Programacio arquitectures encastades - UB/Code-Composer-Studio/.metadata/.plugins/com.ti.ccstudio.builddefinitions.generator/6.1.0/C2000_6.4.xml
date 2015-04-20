@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.0"?>
 
-<!-- Auto-generated from: C:\Users\Victor\Documents\GitHub\Code-Composer-Studio\.metadata\.plugins\com.ti.ccstudio.builddefinitions.generator\native\C2000_6.4.3.xml -->
+<!-- Auto-generated from: C:\Users\Victor\Documents\GitHub\C-VICTOR\Programacio arquitectures encastades - UB\Code-Composer-Studio\.metadata\.plugins\com.ti.ccstudio.builddefinitions.generator\native\C2000_6.4.4.xml -->
 
 <plugin>
 
@@ -997,6 +997,14 @@ You will still be able to set breakpoints and profile on function-level boundari
 				command="--diag_error="
 				valueType="stringList">
 			</option>
+			<option
+				id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.BUFFER_DIAGNOSTICS"
+				name="Line buffer diagnostic output (--buffer_diagnostics, -pdb)"
+				tip="Aliases: --buffer_diagnostics, -pdb&lt;BODY&gt;Line buffer diagnostic output to reduce message mixing when compiling in parallel."
+				category="com.ti.ccstudio.buildDefinitions.C2000_6.4.cat.compilerID.PDIAG"
+				defaultValue="false"
+				command="--buffer_diagnostics"
+				valueType="boolean"/>
 			<option
 				id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DISPLAY_ERROR_NUMBER"
 				name="Emit diagnostic identifier numbers (--display_error_number, -pden)"
@@ -2201,6 +2209,14 @@ Use '--printf_support=minimal' to exclude support for width and precision flags 
 				valueType="stringList">
 			</option>
 			<option
+				id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.BUFFER_DIAGNOSTICS"
+				name="Line buffer diagnostic output (--buffer_diagnostics, -pdb)"
+				tip="Aliases: --buffer_diagnostics, -pdb&lt;BODY&gt;Line buffer diagnostic output to reduce message mixing when compiling in parallel."
+				category="com.ti.ccstudio.buildDefinitions.C2000_6.4.cat.linkerID.LNKDIAG"
+				defaultValue="false"
+				command="--buffer_diagnostics"
+				valueType="boolean"/>
+			<option
 				id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.DISPLAY_ERROR_NUMBER"
 				name="Emit diagnostic identifier numbers (--display_error_number)"
 				tip="Aliases: --display_error_number&lt;BODY&gt;Emit diagnostic identifier numbers"
@@ -2305,14 +2321,6 @@ Use '--printf_support=minimal' to exclude support for width and precision flags 
 				category="com.ti.ccstudio.buildDefinitions.C2000_6.4.cat.linkerID.LNKOUTF"
 				command="--mapfile_contents="
 				valueType="string"/>
-			<option
-				id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.ROM"
-				name="Create a ROM object (--rom)"
-				tip="Aliases: --rom&lt;BODY&gt;This option allows the creation of ROM object module"
-				category="com.ti.ccstudio.buildDefinitions.C2000_6.4.cat.linkerID.LNKOUTF"
-				defaultValue="false"
-				command="--rom"
-				valueType="boolean"/>
 			<option
 				id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.RELOCATABLE"
 				name="Produce a relocatable output module (--relocatable, -r)"
@@ -2727,6 +2735,14 @@ Use '--printf_support=minimal' to exclude support for width and precision flags 
 				id="com.ti.ccstudio.buildDefinitions.C2000_6.4.cat.hex.DIAGNOSTICS"
 				name="Diagnostics Options"
 				owner="com.ti.ccstudio.buildDefinitions.C2000_6.4.hex"/>
+			<option
+				id="com.ti.ccstudio.buildDefinitions.C2000_6.4.hex.BUFFER_DIAGNOSTICS"
+				name="Line buffer diagnostic output (--buffer_diagnostics, -pdb)"
+				tip="Aliases: --buffer_diagnostics, -pdb&lt;BODY&gt;Line buffer diagnostic output."
+				category="com.ti.ccstudio.buildDefinitions.C2000_6.4.cat.hex.DIAGNOSTICS"
+				defaultValue="false"
+				command="--buffer_diagnostics"
+				valueType="boolean"/>
 			<option
 				id="com.ti.ccstudio.buildDefinitions.C2000_6.4.hex.DIAG_ERROR"
 				name="Treat diagnostic &lt;id&gt; as error (--diag_error)"
@@ -3326,6 +3342,8 @@ Use '--printf_support=minimal' to exclude support for width and precision flags 
 			<option command="--diag_remark" tag="DIAG_REMARK"/>
 			<option command="-pdse" tag="DIAG_ERROR"/>
 			<option command="--diag_error" tag="DIAG_ERROR"/>
+			<option command="-pdb" tag="BUFFER_DIAGNOSTICS"/>
+			<option command="--buffer_diagnostics" tag="BUFFER_DIAGNOSTICS"/>
 			<option command="-pden" tag="DISPLAY_ERROR_NUMBER"/>
 			<option command="--display_error_number" tag="DISPLAY_ERROR_NUMBER"/>
 			<option command="-pdw" tag="NO_WARNINGS"/>
@@ -3505,6 +3523,8 @@ Use '--printf_support=minimal' to exclude support for width and precision flags 
 			<option command="--set_error_limit" tag="SET_ERROR_LIMIT"/>
 			<option command="--diag_remark" tag="DIAG_REMARK"/>
 			<option command="--diag_error" tag="DIAG_ERROR"/>
+			<option command="-pdb" tag="BUFFER_DIAGNOSTICS"/>
+			<option command="--buffer_diagnostics" tag="BUFFER_DIAGNOSTICS"/>
 			<option command="--display_error_number" tag="DISPLAY_ERROR_NUMBER"/>
 			<option command="--no_warnings" tag="NO_WARNINGS"/>
 			<option command="-pdew" tag="EMIT_WARNINGS_AS_ERRORS"/>
@@ -3521,7 +3541,6 @@ Use '--printf_support=minimal' to exclude support for width and precision flags 
 			<option command="-a" tag="ABSOLUTE_EXE"/>
 			<option command="--absolute_exe" tag="ABSOLUTE_EXE"/>
 			<option command="--mapfile_contents" tag="MAPFILE_CONTENTS"/>
-			<option command="--rom" tag="ROM"/>
 			<option command="-r" tag="RELOCATABLE"/>
 			<option command="--relocatable" tag="RELOCATABLE"/>
 			<option command="--ecc:ecc_error" tag="ECC__ECC_ERROR"/>
@@ -3600,6 +3619,8 @@ Use '--printf_support=minimal' to exclude support for width and precision flags 
 			<option command="--zero" tag="ZERO"/>
 			<option command="-zero" tag="ZERO"/>
 			<option command="-z" tag="ZERO"/>
+			<option command="--buffer_diagnostics" tag="BUFFER_DIAGNOSTICS"/>
+			<option command="-pdb" tag="BUFFER_DIAGNOSTICS"/>
 			<option command="--diag_error" tag="DIAG_ERROR"/>
 			<option command="--diag_remark" tag="DIAG_REMARK"/>
 			<option command="--diag_suppress" tag="DIAG_SUPPRESS"/>
